@@ -45,7 +45,7 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
       </div>
       <br></br>
       <div className = {styles.textUnderLogo}>
-      &quot; Data is a precious thing and will last longer than the systems themselves.&quot;
+      &quot;Data is a precious thing and will last longer than the systems themselves.&quot;
       </div>
       <br></br>
       <div className = {styles.author}>
