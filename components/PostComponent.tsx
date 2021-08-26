@@ -26,7 +26,9 @@ const postComponent = (props: Props) => {
             
                 {postname}
             </h1>
+            <div className = {Styles.image}>
             <Image layout = 'fill' src = {imglink} className = {Styles.image}></Image>
+            </div>
             </div>
             
             </Link> 
