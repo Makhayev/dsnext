@@ -26,7 +26,7 @@ const postComponent = (props: Props) => {
             
                 {postname}
             </h1>
-            <Image layout = 'intrinsic' src = {require(imglink)} className = {Styles.image}></Image>
+            <Image layout = 'intrinsic' src = {imglink} className = {Styles.image}></Image>
             </div>
             
             </Link> 

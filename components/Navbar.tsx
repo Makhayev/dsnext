@@ -22,10 +22,10 @@ const Navbar: React.FC<Props> = (props: Props) => {
       </Head>
             <div className = {Styles.Navb}>
             <Link href = '/'>Home </Link>
-            <Link href = '/pastEvents'> Past Events </Link>
+            <Link href = '/PastEvents'> Past Events </Link>
             {/* <Link href = '/login'> Login</Link> */}
             <Link href = '/#aboutUs'> About us</Link>
-            <Link href = '/createPost'>New post</Link>
+            <Link href = '/CreatePost'>New post</Link>
             <Link href = '/#contacts'> Contacts</Link>
             
             {/* <Link href = '/ru'>RU</Link>  */}
