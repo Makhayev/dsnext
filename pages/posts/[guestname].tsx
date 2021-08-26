@@ -46,7 +46,9 @@ const guestname = ({post}: InferGetStaticPropsType<typeof getStaticProps>) => {
             <hr className = {Styles.line}>
             </hr>
             <div className = {Styles.flexContainer}>
-                <Image layout ='intrinsic' src = {post.imglink} className = {Styles.img}></Image>
+                <div className = {Styles.img}>
+                <Image layout ='intrinsic' width = {500} height = {500} src = {post.imglink} className = {Styles.img}></Image>
+                </div>
                 <div className = {Styles.text}>
                     <h1 className = {Styles.header}>
                         {post.postname}
