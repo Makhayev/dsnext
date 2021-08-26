@@ -17,7 +17,7 @@ type post = {
   descriptionru: string
 }
 export const getStaticProps = async() => {
-  const posts = await fetch('http://localhost:80/getLastPost');
+  const posts = await fetch('https://nudatasciback.herokuapp.com/getLastPost');
   const res: post = await posts.json();
   console.log(res);
   console.log(process.env.IMGBB_API)

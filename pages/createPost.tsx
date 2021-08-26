@@ -50,7 +50,7 @@ const CreatePost = (props: Props) => {
                 descriptionru: descriptionruref.current?.value
             }
             console.log(data)
-            fetch('http://localhost:80/newPost', {
+            fetch('https://nudatasciback.herokuapp.com/newPost', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
@@ -72,7 +72,7 @@ const CreatePost = (props: Props) => {
             Password: passwordref.current?.value
         }
         console.log(data)
-        fetch('http://localhost:80/login', {
+        fetch('https://nudatasciback.herokuapp.com/login', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',

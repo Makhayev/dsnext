@@ -22,7 +22,7 @@ type post = {
 
 export const getStaticProps = async() => {
     
-    const posts = await fetch('http://localhost:80/getSomePosts/1');
+    const posts = await fetch('https://nudatasciback.herokuapp.com/getSomePosts/1');
     const res: post[] = await posts.json();
     res.reverse()
     console.log(res);
