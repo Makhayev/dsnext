@@ -50,7 +50,7 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
       </hr>
       <h1 className = {styles.upcomingEvents}>Upcoming events</h1>
       <div className = {styles.flexContainer}>
-      <Image layout = 'intrinsic' src = {res.imglink as any} className = {styles.featuredImage} /> 
+      <Image layout = 'intrinsic' src = {res.imglink} className = {styles.featuredImage} /> 
       
       <div className = {styles.featuredText}>
           <div className = {styles.postname}>
