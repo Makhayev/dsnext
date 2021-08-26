@@ -3,6 +3,7 @@ import Styles from '../styles/CreatePost.module.css'
 import {useRef, useState} from 'react'
 interface Props {
     
+
 }
 
 
