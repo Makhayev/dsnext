@@ -71,6 +71,7 @@ const CreatePost = (props: Props) => {
             Email: emailref.current?.value,
             Password: passwordref.current?.value
         }
+        
         console.log(data)
         fetch('https://nudatasciback.herokuapp.com/login', {
             method: 'POST',

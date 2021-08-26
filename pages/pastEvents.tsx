@@ -26,6 +26,7 @@ export const getStaticProps = async() => {
     const res: post[] = await posts.json();
     res.reverse()
     console.log(res);
+    
   
     return {
       props: {
