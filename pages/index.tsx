@@ -19,7 +19,9 @@ type post = {
 export const getStaticProps = async() => {
   const posts = await fetch('https://nudatasciback.herokuapp.com/getLastPost');
   const res: post = await posts.json();
-  const imgStatic = await import(res.imglink)
+  let imgStatic = require(res.imglink)
+  console.log(typeof(imgStatic))
+  console.log(imgStatic)
   console.log(res);
   console.log(process.env.IMGBB_API)
   return {
