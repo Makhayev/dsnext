@@ -19,22 +19,20 @@ type post = {
 export const getStaticProps = async() => {
   const posts = await fetch('https://nudatasciback.herokuapp.com/getLastPost');
   const res: post = await posts.json();
-  let imgStatic = await import(res.imglink)
-  console.log(typeof(imgStatic))
-  console.log(imgStatic)
+  
   console.log(res);
   console.log(process.env.IMGBB_API)
   return {
     props: {
       res,
-      imgStatic
+      
     },
   }
 
 }
 
 
-export default function Home({res, imgStatic}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home({res}: InferGetStaticPropsType<typeof getStaticProps>) {
 
   
   
@@ -57,7 +55,7 @@ export default function Home({res, imgStatic}: InferGetStaticPropsType<typeof ge
       </hr>
       <h1 className = {styles.upcomingEvents}>Upcoming events</h1>
       <div className = {styles.flexContainer}>
-      <Image layout = 'intrinsic' src = {imgStatic} className = {styles.featuredImage} /> 
+      <Image layout = 'fill' src = {res.imglink} className = {styles.featuredImage} /> 
       
       <div className = {styles.featuredText}>
           <div className = {styles.postname}>
