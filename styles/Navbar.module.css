@@ -1,0 +1,32 @@
+.container {
+    /* height: 20vh; */
+    /* border-style: solid; */
+}
+
+.container a {
+    transition: all 0.2s linear;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    font-size: 3vh;
+    /* border-style: solid; */
+}
+
+.container a:first-of-type {
+    margin-left: 3vw;
+}
+/* .container a:last-of-type {
+    
+    float: right;
+    margin-right: 5vw;
+    
+    margin-top: 1vh;
+} */
+.container a:hover {
+    color: white;
+}
+
+.Navb {
+    margin-top: 4vh;
+    padding-bottom: 5vh;
+}
+

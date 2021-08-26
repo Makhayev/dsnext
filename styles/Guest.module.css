@@ -1,0 +1,38 @@
+.line {
+    margin-top: 5vh;
+    width: 80vw;
+    margin-bottom: 5vh;
+  }
+
+  .img {
+    width: 35vw;
+    margin-left: 10vw;
+    /* position: absolute; */
+  }
+
+  .text {
+    margin-left: 1vw;
+    /* border-style: double; */
+    width: 40vw;
+  }
+
+.header {
+    font-size: 5vh;
+}
+
+.flexContainer {
+    display: flex;
+    /* border-style: dashed; */
+}
+
+.smallLine {
+    margin-top: 5vh;
+    width: 50vw;
+    margin-bottom: 5vh;
+}
+
+.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
