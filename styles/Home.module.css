@@ -33,9 +33,10 @@ margin-top: 10vh;
 }
 
 .featuredImage {
-  width: 35vw;
-  margin-left: 20vw;
+  /* width: 35vw; */
+  margin-left: 15vw;
   /* position: absolute; */
+  /* position: relative; */
 }
 
 .flexContainer {
@@ -46,9 +47,7 @@ margin-top: 10vh;
   margin-left: 1vw;
 }
 
-.description {
 
-}
 .aboutUs {
   margin-left: 15vw;
   margin-right: 15vw;
