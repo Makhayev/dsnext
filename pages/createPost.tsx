@@ -22,16 +22,11 @@ const createPost = (props: Props) => {
     const passwordref = useRef<HTMLInputElement>(null)
     let submit = async () => {
         console.log(imgref.current?.files?.item(0))
-        let bod = {
-            key: 'db91b7fca6802f82b4b5aa5462e5b0d4',
-            image: imgref.current?.files?.item(0),
-            name: 'wrotever'
-            
-        }
+        
         let bdy = new FormData
-        bdy.set('key', 'db91b7fca6802f82b4b5aa5462e5b0d4')
-        bdy.append('image', imgref.current?.files?.item(0))
-        bdy.append('name', guestnameref.current?.value )
+        bdy.set('key', process.env.IMGBB_API!)
+        bdy.append('image', imgref.current?.files?.item(0)!)
+        bdy.append('name', guestnameref.current?.value! )
         let respons = fetch('https://api.imgbb.com/1/upload', {
         // headers: {
         //     'Content-Type': 'multipart/form-data'
