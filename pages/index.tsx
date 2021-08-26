@@ -32,6 +32,8 @@ export const getStaticProps = async() => {
 
 export default function Home({res}: InferGetStaticPropsType<typeof getStaticProps>) {
 
+  const imgg = require(res.imglink)
+
   return (
     <div className={styles.container}>
      
@@ -50,7 +52,7 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
       </hr>
       <h1 className = {styles.upcomingEvents}>Upcoming events</h1>
       <div className = {styles.flexContainer}>
-      <Image layout = 'intrinsic' src = {res.imglink} className = {styles.featuredImage} /> 
+      <Image layout = 'intrinsic' src = {imgg} className = {styles.featuredImage} /> 
       
       <div className = {styles.featuredText}>
           <div className = {styles.postname}>
