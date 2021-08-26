@@ -32,7 +32,6 @@ export const getStaticProps = async() => {
 
 export default function Home({res}: InferGetStaticPropsType<typeof getStaticProps>) {
 
-
   return (
     <div className={styles.container}>
      
@@ -41,7 +40,7 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
       </div>
       <br></br>
       <div className = {styles.textUnderLogo}>
-        "Data is a precious thing and will last longer than the systems themselves." 
+      &quot; Data is a precious thing and will last longer than the systems themselves.&quot;
       </div>
       <br></br>
       <div className = {styles.author}>
@@ -51,7 +50,7 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
       </hr>
       <h1 className = {styles.upcomingEvents}>Upcoming events</h1>
       <div className = {styles.flexContainer}>
-      <img src = {res.imglink} className = {styles.featuredImage} /> 
+      <Image layout = 'intrinsic' src = {require(res.imglink)} className = {styles.featuredImage} /> 
       
       <div className = {styles.featuredText}>
           <div className = {styles.postname}>

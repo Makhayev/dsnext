@@ -8,7 +8,7 @@ interface Props {
 
 
 
-const createPost = (props: Props) => {
+const CreatePost = (props: Props) => {
     const [auth, setauth] = useState(false)
     const guestnameref = useRef<HTMLInputElement>(null)
     const postnameref = useRef<HTMLInputElement>(null)
@@ -139,4 +139,4 @@ const createPost = (props: Props) => {
     )
 }
 
-export default createPost
+export default CreatePost
