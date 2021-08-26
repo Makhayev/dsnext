@@ -1,6 +1,7 @@
 import React from 'react'
 import {InferGetStaticPropsType} from 'next'
 import Styles from '../../styles/Guest.module.css'
+import Image from 'next/image'
 type post = {
     guestname: string,
     postname: string,
@@ -45,7 +46,7 @@ const guestname = ({post}: InferGetStaticPropsType<typeof getStaticProps>) => {
             <hr className = {Styles.line}>
             </hr>
             <div className = {Styles.flexContainer}>
-                <img src = {post.imglink} className = {Styles.img}></img>
+                <Image layout ='intrinsic' src = {post.imglink} className = {Styles.img}></Image>
                 <div className = {Styles.text}>
                     <h1 className = {Styles.header}>
                         {post.postname}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Styles from '../styles/PastEvents.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 interface Props {
     guestname: string,
     postname: string,
@@ -25,7 +26,7 @@ const postComponent = (props: Props) => {
             
                 {postname}
             </h1>
-            <img src = {imglink} className = {Styles.image}></img>
+            <Image layout = 'intrinsic' src = {require(imglink)} className = {Styles.image}></Image>
             </div>
             
             </Link> 

@@ -35,7 +35,7 @@ export const getStaticProps = async() => {
   
 }
 
-const pastEvents = ({res}: InferGetStaticPropsType<typeof getStaticProps>) => {
+const PastEvents = ({res}: InferGetStaticPropsType<typeof getStaticProps>) => {
     const [page, setpage] = useState(1)
 
     return (
@@ -56,4 +56,4 @@ const pastEvents = ({res}: InferGetStaticPropsType<typeof getStaticProps>) => {
     )
 }
 
-export default pastEvents
+export default PastEvents
