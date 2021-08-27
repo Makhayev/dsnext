@@ -35,7 +35,7 @@ margin-top: 10vh;
 .featuredImage {
   /* width: 35vw; */
   margin-left: 15vw;
-  border-style: dashed;
+  /* border-style: dashed; */
   width: 1000px;
   /* height: 500px; */
   /* position: absolute; */
@@ -44,7 +44,7 @@ margin-top: 10vh;
 
 .flexContainer {
   display: flex;
-  border-style: double;
+  /* border-style: double; */
 }
 
 .featuredText {
@@ -63,7 +63,7 @@ margin-top: 10vh;
   width: 40vw;
 }
 
-.descrption {
+.description {
   width: 30vw;
 }
 
