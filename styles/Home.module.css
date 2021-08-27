@@ -36,13 +36,15 @@ margin-top: 10vh;
   /* width: 35vw; */
   margin-left: 15vw;
   border-style: dashed;
-  width: 35vw;
+  width: 500px;
+  height: 500px;
   /* position: absolute; */
   /* position: relative; */
 }
 
 .flexContainer {
   display: flex;
+  border-style: double;
 }
 
 .featuredText {
