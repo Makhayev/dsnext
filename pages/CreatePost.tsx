@@ -25,7 +25,7 @@ const CreatePost = (props: Props) => {
         console.log(imgref.current?.files?.item(0))
         
         let bdy = new FormData
-        bdy.set('key', process.env.IMGBB_API!)
+        bdy.set('key', 'db91b7fca6802f82b4b5aa5462e5b0d4')
         bdy.append('image', imgref.current?.files?.item(0)!)
         bdy.append('name', guestnameref.current?.value! )
         let respons = fetch('https://api.imgbb.com/1/upload', {
