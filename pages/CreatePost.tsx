@@ -49,6 +49,7 @@ const CreatePost = (props: Props) => {
                 guestnameru: guestnameruref.current?.value,
                 postnameru: postnameruref.current?.value,
                 descriptionru: descriptionruref.current?.value
+                
             }
             console.log(data)
             fetch('https://nudatasciback.herokuapp.com/newPost', {
