@@ -72,6 +72,7 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
           </br>
           <div className = {styles.description}>
             {res.description}
+            
           </div>
       </div>
       </div>
