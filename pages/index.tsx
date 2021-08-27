@@ -45,13 +45,14 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
       </div>
       <br></br>
       <div className = {styles.textUnderLogo}>
+        
       &quot;Data is a precious thing and will last longer than the systems themselves.&quot;
       </div>
       <br></br>
       <div className = {styles.author}>
         Tim-Berners Lee
       </div>
-      
+
       <hr className = {styles.line}>
       </hr>
       <h1 className = {styles.upcomingEvents}>Upcoming events</h1>
