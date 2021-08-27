@@ -35,6 +35,7 @@ margin-top: 10vh;
 .featuredImage {
   /* width: 35vw; */
   margin-left: 15vw;
+  border-style: dashed;
   /* position: absolute; */
   /* position: relative; */
 }
@@ -56,6 +57,10 @@ margin-top: 10vh;
 }
 .postname {
   font-size: 6vh;
+}
+
+.descrption {
+  width: 40vw;
 }
 
 .socMediaIcon {
