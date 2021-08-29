@@ -89,13 +89,13 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
       </h1>
       <div >
       <a href="http://instagram.com/nu_datasci" className = {styles.socMediaIcon}>
-        <i className="fa fa-instagram fa-3x" aria-hidden="true"  style={{fontSize: '14vh'}}>  </i>
+        <i className="fa fa-instagram fa-3x" aria-hidden="true"  >  </i>
       </a>
       <a href="https://www.youtube.com/channel/UC9CxWZp9H3GDhvDRX_eb8tA" className = {styles.socMediaIcon}> 
-        <i className="fa fa-youtube-play fa-3x" aria-hidden="true" style= {{fontSize: '14vh'}}>  </i>
+        <i className="fa fa-youtube-play fa-3x" aria-hidden="true" >  </i>
       </a>
       <a href="http://t.me/datasci_channel" className = {styles.socMediaIcon}>
-        <i className="fa fa-telegram fa-3x" aria-hidden="true" style={{fontSize: '14vh'}}>  </i>
+        <i className="fa fa-telegram fa-3x" aria-hidden="true" >  </i>
       </a>
       </div>
 

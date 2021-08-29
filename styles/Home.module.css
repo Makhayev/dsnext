@@ -71,6 +71,7 @@ margin-top: 10vh;
   color: #844FBD;
   margin-left: 10vw;
   margin-right: 10vw;
+  font-size: 5vh;
 }
 
 .socMediaIcon:first-child {
@@ -80,4 +81,76 @@ margin-top: 10vh;
 .bottomText {
   margin-top: 30vh;
   float: right;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .socMediaIcon {
+    /* width: 5vw; */
+    font-size: 7vh;
+    /* border-style: dashed; */
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+  }
+
+  .socMediaIcon:first-child {
+    margin-left: auto;
+  }
+
+  .flexContainer {
+    display: block;
+  }
+  
+  .postname {
+    font-size: 4vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    margin-top: 5vh;
+    text-align: center;
+    /* border-style: dashed; */
+
+  }
+
+  .description {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    text-align: center;
+
+  }
+
+  .image {
+    width: 70vw;
+    margin-top: 2vh;
+  }
+
+  .textUnderLogo {
+    font-size: 3vh;
+  }
+
+  .author {
+    font-size: 2vh;
+  }
+
+
+
+  .featuredImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+  }
+
+  .bottomText {
+    float:none;
+    margin-top: 20vh;
+
+    text-align: center;
+  }
 }
