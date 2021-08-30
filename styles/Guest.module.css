@@ -14,6 +14,7 @@
     margin-left: 1vw;
     /* border-style: double; */
     width: 40vw;
+    white-space: pre-line;
   }
 
 .header {
@@ -35,4 +36,30 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 854px;
+    height: 534px;
+}
+
+@media only screen and (max-width: 600px) {
+  .flexContainer {
+    display: block;
+  }
+
+  .img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    text-align: center;
+  }
+
+  .video {
+    width: 90vw;
+    height: 35vh;
+  }
+
 }

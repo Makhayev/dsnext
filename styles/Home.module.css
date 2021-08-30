@@ -65,6 +65,12 @@ margin-top: 10vh;
 
 .description {
   width: 45vw;
+  white-space: pre-line;
+}
+
+.comingSoon {
+  text-align: center;
+  font-size: 5vh;
 }
 
 .socMediaIcon {
@@ -122,7 +128,6 @@ margin-top: 10vh;
     margin-right: auto;
     width: 80vw;
     text-align: center;
-
   }
 
   .image {

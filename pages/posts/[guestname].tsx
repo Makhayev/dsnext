@@ -61,7 +61,7 @@ const guestname = ({post}: InferGetStaticPropsType<typeof getStaticProps>) => {
             <hr className = {Styles.smallLine}>
             </hr>
             {/* <iframe src="https://www.youtube.com/embed/6zn-r4lh5Vw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="854" height="534" frameborder="0"></iframe> */}
-            <iframe width="854" height="534" src={post.youtubelink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className = {Styles.video}></iframe>
+            <iframe  src={post.youtubelink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className = {Styles.video}></iframe>
         
             <hr className = {Styles.line}>
             </hr>
