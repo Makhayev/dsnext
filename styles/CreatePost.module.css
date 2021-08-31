@@ -77,3 +77,19 @@
   .bn37:hover {
     transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
   }
+
+  @media only screen and (max-width: 600px) {
+    .header {
+      width: 90vw;
+    }
+    .bn {
+      width: 70vw;
+    }
+    .shortInput {
+      width: 90vw;
+    }
+
+    .largeInput {
+      width: 90vw;
+    }
+  }
