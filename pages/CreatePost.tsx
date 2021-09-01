@@ -25,13 +25,11 @@ const CreatePost = (props: Props) => {
         console.log(imgref.current?.files?.item(0))
         
         let bdy = new FormData
-        bdy.set('key', 'db91b7fca6802f82b4b5aa5462e5b0d4')
+        bdy.set('key', process.env.IMGBB_API!)
         bdy.append('image', imgref.current?.files?.item(0)!)
         bdy.append('name', guestnameref.current?.value! )
-        let respons = fetch('https://api.imgbb.com/1/upload', {
-        // headers: {
-        //     'Content-Type': 'multipart/form-data'
-        // },
+        let respons = fetch(process.env.IMGBB_UPLOAD!, {
+        
         
         method: 'POST',
             body: bdy
@@ -52,7 +50,7 @@ const CreatePost = (props: Props) => {
                 
             }
             console.log(data)
-            fetch('https://nudatasciback.herokuapp.com/newPost', {
+            fetch('https://' + process.env.URL + '/newPost', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
@@ -75,7 +73,8 @@ const CreatePost = (props: Props) => {
         }
         
         console.log(data)
-        fetch('https://nudatasciback.herokuapp.com/login', {
+        let str = 'https://'+ process.env.URL +'/login'
+        fetch(str, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',

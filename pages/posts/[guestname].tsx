@@ -15,7 +15,7 @@ type post = {
   }
 
 export const getStaticPaths = async () => {
-    const res = await fetch('https://nudatasciback.herokuapp.com/getSomePosts/1')
+    const res = await fetch('https://' + process.env.URL + '/getSomePosts/1')
     const data: post[] = await res.json()
     console.log(data)
     const paths = data.map(post  => {
@@ -32,7 +32,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async(context: any) => {
     const gn = context.params.guestname
-    const res = await fetch('https://nudatasciback.herokuapp.com/getOnePost/' + gn)
+    const res = await fetch('https://' + process.env.URL + '/getOnePost/' + gn)
     const data = await res.json()
 
     return {

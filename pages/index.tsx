@@ -17,7 +17,8 @@ type post = {
   descriptionru: string
 }
 export const getStaticProps = async() => {
-  const posts = await fetch('https://nudatasciback.herokuapp.com/getLastPost');
+  let str =  'https://' + process.env.URL + '/getLastPost'
+  const posts = await fetch(str);
   const res: post = await posts.json();
   
   console.log(res);
