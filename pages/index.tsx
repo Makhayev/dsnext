@@ -16,6 +16,7 @@ type post = {
   postnameru: string,
   descriptionru: string
 }
+
 export const getStaticProps = async() => {
   let str =  'https://' + process.env.URL + '/getLastPost'
   const posts = await fetch(str);
