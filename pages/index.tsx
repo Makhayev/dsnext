@@ -29,7 +29,6 @@ export const getStaticProps = async() => {
       res,
       
     },
-
   }
 
 }
@@ -56,10 +55,8 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
         Tim-Berners Lee
       </div>
 
-      <hr className = {styles.line}> </hr>
-      {/* <h1 className = {styles.upcomingEvents}>Upcoming Events</h1> */}
-      {/* <h2 className = {styles.comingSoon}>Coming Soon!</h2> */}
-      {/* <hr className = {styles.line}></hr> */}
+      <hr className = {styles.line}>
+      </hr>
       <h1 className = {styles.upcomingEvents}>Upcoming events</h1>
       <div className = {styles.flexContainer}> 
         <div className = {styles.featuredImage}>

@@ -41,11 +41,11 @@ const PastEvents = ({res}: InferGetStaticPropsType<typeof getStaticProps>) => {
 
     return (
         <div>
-            {res.map((item) => (
-              // <Link href = {"/posts/" + item.guestname} >
+            {res.filter((item, i) => i > 0 ? true : false).map((item) => (
+              
               <PostComponent descriptionru = {item.descriptionru} youtubelink = {item.youtubelink} key = {item.guestname} guestname = {item.guestname} postname = {item.postname} imglink = {item.imglink} imgdeletelink = {item.imgdeletelink} description = {item.description} postnameru = {item.postnameru} guestnameru = {item.guestnameru}  />
-              // </Link>
-            )
+
+              )
 
 
               
