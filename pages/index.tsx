@@ -69,7 +69,8 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
             {res.postname}
           </div>
     
-          <br> 
+          <br>
+           
           </br>
           <br>
           </br>
