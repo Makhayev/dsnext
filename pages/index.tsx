@@ -61,14 +61,14 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
       <div className = {styles.flexContainer}> 
         <div className = {styles.featuredImage}>
           
-          
+
       <Image layout = 'intrinsic' src = {res.imglink} width = {1000} height = {1000}  /> 
       </div>
       <div className = {styles.featuredText}>
           <div className = {styles.postname}>
             {res.postname}
           </div>
-          
+    
           <br> 
           </br>
           <br>
