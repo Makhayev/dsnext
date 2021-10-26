@@ -29,7 +29,7 @@ export const getStaticProps = async() => {
       res,
       
     },
-    
+
   }
 
 }
@@ -56,12 +56,10 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
         Tim-Berners Lee
       </div>
 
-      <hr className = {styles.line}>
-      </hr>
+      <hr className = {styles.line}> </hr>
       <h1 className = {styles.upcomingEvents}>Upcoming Events</h1>
-      <h2 className = {styles.comingSoon}>Coming Soon!</h2>
-      <hr className = {styles.line}></hr>
-      <h1 className = {styles.upcomingEvents}>Latest events</h1>
+      {/* <h2 className = {styles.comingSoon}>Coming Soon!</h2> */}
+
       <div className = {styles.flexContainer}> 
         <div className = {styles.featuredImage}>
           
@@ -82,6 +80,29 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
           </div>
       </div>
       </div>
+
+      {/* <hr className = {styles.line}></hr>
+      <h1 className = {styles.upcomingEvents}>Latest events</h1>
+      <div className = {styles.flexContainer}> 
+        <div className = {styles.featuredImage}>
+          
+      <Image layout = 'intrinsic' src = {res.imglink} width = {1000} height = {1000}  /> 
+      </div>
+      <div className = {styles.featuredText}>
+          <div className = {styles.postname}>
+            {res.postname}
+          </div>
+          
+          <br> 
+          </br>
+          <br>
+          </br>
+          <div className = {styles.description}>
+            {res.description}
+
+          </div>
+      </div>
+      </div> */}
       <hr className = {styles.line}></hr>
        
       {/* </hr> */}
