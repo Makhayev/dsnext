@@ -38,8 +38,9 @@ export default function Home({res}: InferGetStaticPropsType<typeof getStaticProp
 
   
   
-
+ 
   return (
+    
     <div className={styles.container}>
      
       <div className = {styles.image}> 
