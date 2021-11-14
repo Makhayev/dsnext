@@ -23,6 +23,7 @@ export const getStaticProps = async() => {
   const res: post = await posts.json();
   
   console.log(res);
+  
   console.log(typeof(res.description))
   return {
     props: {
