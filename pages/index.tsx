@@ -25,6 +25,7 @@ export const getStaticProps = async() => {
   console.log(res);
   
   console.log(typeof(res.description))
+  
   return {
     props: {
       res,
